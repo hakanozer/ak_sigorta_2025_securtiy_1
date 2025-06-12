@@ -1,5 +1,7 @@
 package com.works.configs;
 
+import com.works.entities.Info;
+import com.works.repositories.InfoRepository;
 import com.works.services.CustomerService;
 import com.works.services.JWTService;
 import jakarta.servlet.FilterChain;
@@ -12,12 +14,12 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @Configuration
 @RequiredArgsConstructor
@@ -26,6 +28,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     private final HandlerExceptionResolver handlerExceptionResolver;
     private final JWTService jwtService;
     private final CustomerService customerService;
+    private final InfoRepository infoRepository;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -35,6 +38,16 @@ public class SecurityFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
             return;
         }
+
+        // info
+        String sessionId = request.getSession().getId();
+        String agent = request.getHeader("User-Agent");
+        String ip = request.getRemoteAddr();
+        String url = request.getRequestURI();
+        String userName = "Global";
+        String roles = "Global_Role";
+        String time = System.currentTimeMillis() + "";
+
 
         try {
             String jwt = authHeader.substring(7);
@@ -50,9 +63,24 @@ public class SecurityFilter extends OncePerRequestFilter {
                     }
                 }
             }
+
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+            if (auth != null && auth.getName() != null) {
+                userName = auth.getName();
+                roles = auth.getAuthorities().toString();
+            }
+
+            Info info = new Info(sessionId, agent, ip, url, userName, roles, time);
+            infoRepository.save(info);
+
             filterChain.doFilter(request, response);
         }catch (Exception ex) {
-            handlerExceptionResolver.resolveException(request, response, null, ex);
+            response.setContentType("application/json");
+            response.setStatus(500);
+            PrintWriter out = response.getWriter();
+            out.write("{ \"status\": false, \"messaage\": "+ex.getMessage()+" }");
+            out.flush();
+            //handlerExceptionResolver.resolveException(request, response, null, ex);
         }
 
     }

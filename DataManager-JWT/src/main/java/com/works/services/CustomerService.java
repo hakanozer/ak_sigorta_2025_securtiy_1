@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -21,6 +22,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.PreparedStatement;
 import java.util.*;
 
 @Service
@@ -33,6 +35,7 @@ public class CustomerService implements UserDetailsService {
     private final PasswordEncoder passwordEncoder;
     private final JWTService jwtService;
     private final AuthenticationConfiguration configuration;
+    private final DriverManagerDataSource driverManagerDataSource;
 
     public ResponseEntity login(CustomerLoginDto customer) {
 
@@ -41,6 +44,16 @@ public class CustomerService implements UserDetailsService {
 
         String plainPassword = tinkEncDec.decrypt(cipherPassword);
         System.out.println(plainPassword);
+
+        try {
+            String sql = "select * from customer where username=? and password='"+customer.getPassword()+"'";
+            PreparedStatement pre = driverManagerDataSource.getConnection().prepareStatement(sql);
+            pre.setString(1, customer.getUsername());
+            //pre.setString(2, plainPassword);
+            //pre.execute();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         Map<String,Object> map = new LinkedHashMap<>();
         try {

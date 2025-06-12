@@ -20,6 +20,7 @@ public class SecurityConfig {
     private final CustomerService customerService;
     private final PasswordEncoder passwordEncoder;
     private final SecurityFilter securityFilter;
+    private final RateLimitingFilter rateLimitingFilter;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -34,6 +35,7 @@ public class SecurityConfig {
                 .csrf( csrf -> csrf.disable() )
                 .formLogin( formLogin -> formLogin.disable() )
                 .authenticationProvider(authenticationManager())
+                .addFilterBefore(rateLimitingFilter, UsernamePasswordAuthenticationFilter.class)
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class )
                 .build();
     }
