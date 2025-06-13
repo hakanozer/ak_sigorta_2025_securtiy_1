@@ -1,0 +1,4 @@
+img.img-thumbnail:hover {
+  border-color: black;
+  cursor: pointer;
+}

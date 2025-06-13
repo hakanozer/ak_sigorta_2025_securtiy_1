@@ -1,0 +1,11 @@
+@if (product) {
+    <div class="card">
+        <img src={{product.images[0]}} class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.price | price}}</p>
+        <p class="card-text">{{product.category}}</p>
+        <a [routerLink]="['/detail', product.id]" routerLinkActive="router-link-active"  class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+}

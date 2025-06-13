@@ -1,0 +1,59 @@
+<ali appPagetitle [title]="'Users'" [color]="'green'" ></ali>
+
+<table  class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Profile</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        @for( item of users; track item.id) {
+            <tr (click)="fncSelectUser(this, item)" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <th scope="row">{{item.id}}</th>
+                <td>
+                    <img src="{{item.profile}}" class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
+                </td>
+                <td>{{item.username}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone | phone}}</td>
+                <td>{{item.role}}</td>
+              </tr>
+
+        }
+      
+    </tbody>
+  </table>
+
+<!-- Modal -->
+ @if(selectUser) {
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{selectUser.name}}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="{{selectUser.profile}}" class="img-fluid rounded-circle" style="width: 150px; height: 150px;">
+          </div>
+            <div class="mt-3">
+                <h5>Username: {{selectUser.username}}</h5>
+                <h5>Email: {{selectUser.email}}</h5>
+                <h5>Role: {{selectUser.role}}</h5>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+}

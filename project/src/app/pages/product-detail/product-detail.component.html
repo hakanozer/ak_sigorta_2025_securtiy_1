@@ -1,0 +1,30 @@
+@if(item) {
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>{{item.title}}</h2>
+            <p>Price: {{item.price | price}}</p>
+            <p>Category: {{item.category}}</p>
+            <p>{{item.description}}</p>
+            @if(isLike) {
+                <i (click)="addLike()" class="bi bi-suit-heart-fill fs-2 text-danger"></i>
+            }
+            @else {
+                <i (click)="addLike()" class="bi bi-suit-heart fs-2"></i>
+            }
+            
+        </div>
+        <div class="col-sm-6">
+            <img src="{{bigImage}}" alt="{{item.title}}" class="img-fluid">
+
+            <div class="row">
+            @for( img of item.images; track img  ) {
+                <div class="col-4">
+                    <img src="{{img}}" alt="{{item.title}}" class="img-thumbnail" (click)="changeBigImage(img)">
+                </div>
+            }
+            </div>
+
+        </div>
+    </div>
+}
+

@@ -1,0 +1,12 @@
+<h2>Search: {{query}}</h2>
+@if(error != '') {
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>No found!</strong> {{error}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+}
+<div class="row">
+@for ( item of products; track item.id) {
+        <app-product-item [product]="item" class="col-sm-12 col-md-6 col-lg-4" ></app-product-item>
+}
+</div>
