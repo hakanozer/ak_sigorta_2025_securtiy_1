@@ -1,5 +1,7 @@
 <ali appPagetitle [title]="'Products'" [color]="'red'" ></ali>
 
+<div [innerHTML]="sanitizedHtml"></div>
+
 <div class="row">
 @for ( item of products; track item.id) {
         <app-product-item [product]="item" class="col-sm-12 col-md-6 col-lg-4" ></app-product-item>

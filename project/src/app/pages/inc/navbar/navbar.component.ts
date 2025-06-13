@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ApiService } from '../../../services/api.service';
+import { SecurdataService } from '../../../services/securdata.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,8 +13,14 @@ import { ApiService } from '../../../services/api.service';
 export class NavbarComponent {
 
   name = ''
-  constructor( private api:ApiService ) {
-    this.name = localStorage.getItem('name') || ''
+  constructor( private api:ApiService, private secur: SecurdataService ) {
+    try {
+        const cipherTextName = localStorage.getItem('name') || ''
+        this.name = this.secur.decrypt(cipherTextName)
+    } catch (error) {
+      localStorage.removeItem('name')
+    }
+
   }
 
   fncLogout() {
