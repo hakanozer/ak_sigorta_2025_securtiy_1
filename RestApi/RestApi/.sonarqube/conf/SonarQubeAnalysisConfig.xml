@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf</SonarConfigDir>
-  <SonarOutputDir>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/out</SonarOutputDir>
-  <SonarBinDir>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>/Users/hakan/Documents/flo_2025_dotnet/RestApi</SonarScannerWorkingDirectory>
-  <JavaExePath>/Users/hakan/.sonar/cache/bf9faf4540001a251e6bfb52b99c7ec5b1f36d3ebe94e104f61a30f173ba8c78/OpenJDK17U-jre_x64_mac_hotspot_17.0.13_11.tar.gz_extracted/jdk-17.0.13+11-jre/Contents/Home/bin/java</JavaExePath>
+  <SonarConfigDir>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf</SonarConfigDir>
+  <SonarOutputDir>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/out</SonarOutputDir>
+  <SonarBinDir>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi</SonarScannerWorkingDirectory>
+  <JavaExePath>/Users/hakan/.sonar/cache/a886b8f2a50eca2e59b45ea59f5a2e8e9d27ff5b5b3b069443a70cda7f27c907/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.13_11.tar.gz_extracted/jdk-17.0.13+11-jre/Contents/Home/bin/java</JavaExePath>
   <ScanAllAnalysis>true</ScanAllAnalysis>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <HasBeginStepCommandLineTruststorePassword>false</HasBeginStepCommandLineTruststorePassword>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
-  <SonarQubeVersion>25.5.0.107428</SonarQubeVersion>
-  <SonarProjectKey>newProject</SonarProjectKey>
+  <SonarQubeVersion>25.6.0.109173</SonarQubeVersion>
+  <SonarProjectKey>ak_sigorta_1</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
     <ConfigSetting Id="VsCoverageConverterToolPath" />
     <ConfigSetting Id="UnchangedFilesPath" />
-    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="/Users/hakan/Documents/flo_2025_dotnet/RestApi" />
-    <ConfigSetting Id="settings.file.path" Value="/Users/hakan/.dotnet/tools/.store/dotnet-sonarscanner/10.1.2/dotnet-sonarscanner/10.1.2/tools/netcoreapp3.1/any/SonarQube.Analysis.xml" />
+    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi" />
+    <ConfigSetting Id="settings.file.path" Value="/Users/hakan/.dotnet/tools/.store/dotnet-sonarscanner/10.2.0/dotnet-sonarscanner/10.2.0/tools/netcoreapp3.1/any/SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
     <Property Name="sonar.cs.ignoreHeaderComments">true</Property>
     <Property Name="sonar.typescript.file.suffixes">.ts,.tsx,.cts,.mts</Property>
+    <Property Name="sonar.ai.codefix.hidden">false</Property>
     <Property Name="sonar.python.xunit.skipDetails">false</Property>
     <Property Name="sonar.ipynb.file.suffixes">ipynb</Property>
     <Property Name="sonar.auth.saml.signature.enabled">false</Property>
@@ -29,7 +30,7 @@
     <Property Name="sonar.terraform.file.suffixes">.tf</Property>
     <Property Name="sonar.forceAuthentication">true</Property>
     <Property Name="sonar.notifications.delay">60</Property>
-    <Property Name="sonar.multi-quality-mode.enabled">true</Property>
+    <Property Name="sonar.multi-quality-mode.enabled">false</Property>
     <Property Name="sonar.rust.file.suffixes">.rs</Property>
     <Property Name="sonaranalyzer-cs.ruleNamespace">SonarAnalyzer.CSharp</Property>
     <Property Name="sonar.azureresourcemanager.file.identifier">https://schema.management.azure.com/schemas/,http://schema.management.azure.com/schemas/</Property>
@@ -58,18 +59,18 @@
     <Property Name="sonar.jsp.file.suffixes">.jsp,.jspf,.jspx</Property>
     <Property Name="sonar.javascript.maxFileSize">1000</Property>
     <Property Name="sonar.javascript.environments">amd,applescript,atomtest,browser,commonjs,embertest,greasemonkey,jasmine,jest,jquery,meteor,mocha,mongo,nashorn,node,phantomjs,prototypejs,protractor,qunit,serviceworker,shared-node-browser,shelljs,webextensions,worker</Property>
-    <Property Name="sonar.scm.disabled">false</Property>
+    <Property Name="sonar.scm.disabled">true</Property>
     <Property Name="sonar.ruby.exclusions">**/vendor/**</Property>
     <Property Name="sonar.auth.saml.enabled">false</Property>
     <Property Name="sonar.vbnet.file.suffixes">.vb</Property>
-    <Property Name="sonar.vbnet.analyzer.dotnet.pluginVersion">10.9.0.115408</Property>
+    <Property Name="sonar.vbnet.analyzer.dotnet.pluginVersion">10.10.1.116480</Property>
     <Property Name="sonar.technicalDebt.developmentCost">30</Property>
     <Property Name="sonar.validateWebhooks">true</Property>
     <Property Name="sonar.python.file.suffixes">py</Property>
     <Property Name="sonar.cs.file.suffixes">.cs,.razor</Property>
     <Property Name="sonar.allowPermissionManagementForProjectAdmins">true</Property>
     <Property Name="sonar.text.inclusions.activate">true</Property>
-    <Property Name="sonaranalyzer-vbnet.staticResourceName">SonarAnalyzer-vbnet-10.9.0.115408.zip</Property>
+    <Property Name="sonaranalyzer-vbnet.staticResourceName">SonarAnalyzer-vbnet-10.10.1.116480.zip</Property>
     <Property Name="sonar.java.file.suffixes">.java,.jav</Property>
     <Property Name="sonar.kotlin.file.suffixes">.kt,.kts</Property>
     <Property Name="sonar.php.file.suffixes">php,php3,php4,php5,phtml,inc</Property>
@@ -105,32 +106,32 @@
     <Property Name="sonar.terraform.activate">true</Property>
     <Property Name="sonar.auth.github.webUrl">https://github.com/</Property>
     <Property Name="sonar.php.frameworkDetection">true</Property>
-    <Property Name="sonar.cs.analyzer.dotnet.pluginVersion">10.9.0.115408</Property>
-    <Property Name="sonaranalyzer-vbnet.pluginVersion">10.9.0.115408</Property>
+    <Property Name="sonar.cs.analyzer.dotnet.pluginVersion">10.10.1.116480</Property>
+    <Property Name="sonaranalyzer-vbnet.pluginVersion">10.10.1.116480</Property>
     <Property Name="sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek">4</Property>
     <Property Name="sonaranalyzer-vbnet.analyzerId">SonarAnalyzer.VisualBasic</Property>
     <Property Name="sonar.cs.roslyn.ignoreIssues">false</Property>
     <Property Name="sonaranalyzer-cs.pluginKey">csharp</Property>
     <Property Name="sonar.kubernetes.activate">true</Property>
     <Property Name="sonar.java.ignoreUnnamedModuleForSplitPackage">False</Property>
-    <Property Name="sonar.vbnet.analyzer.dotnet.staticResourceName">SonarAnalyzer-vbnet-10.9.0.115408.zip</Property>
+    <Property Name="sonar.vbnet.analyzer.dotnet.staticResourceName">SonarAnalyzer-vbnet-10.10.1.116480.zip</Property>
     <Property Name="sonar.json.file.suffixes">.json</Property>
     <Property Name="sonar.auth.saml.providerName">SAML</Property>
     <Property Name="provisioning.github.project.visibility.enabled">true</Property>
     <Property Name="sonar.ruby.coverage.reportPaths">coverage/.resultset.json</Property>
     <Property Name="sonar.text.inclusions">**/*.sh,**/*.bash,**/*.zsh,**/*.ksh,**/*.ps1,**/*.properties,**/*.conf,**/*.pem,**/*.config,.env,.aws/config</Property>
     <Property Name="sonar.qualityProfiles.allowDisableInheritedRules">true</Property>
-    <Property Name="sonaranalyzer-cs.staticResourceName">SonarAnalyzer-csharp-10.9.0.115408.zip</Property>
+    <Property Name="sonaranalyzer-cs.staticResourceName">SonarAnalyzer-csharp-10.10.1.116480.zip</Property>
     <Property Name="sonar.auth.gitlab.allowUsersToSignUp">true</Property>
     <Property Name="sonar.projectCreation.mainBranchName">main</Property>
-    <Property Name="sonar.cs.analyzer.dotnet.staticResourceName">SonarAnalyzer-csharp-10.9.0.115408.zip</Property>
+    <Property Name="sonar.cs.analyzer.dotnet.staticResourceName">SonarAnalyzer-csharp-10.10.1.116480.zip</Property>
     <Property Name="sonar.authenticator.downcase">false</Property>
     <Property Name="sonaranalyzer-cs.analyzerId">SonarAnalyzer.CSharp</Property>
     <Property Name="sonar.cs.analyzer.dotnet.pluginKey">csharp</Property>
     <Property Name="sonar.technicalDebt.ratingGrid">0.05,0.1,0.2,0.5</Property>
     <Property Name="sonar.lf.enableGravatar">false</Property>
     <Property Name="sonar.docker.activate">true</Property>
-    <Property Name="sonaranalyzer-cs.pluginVersion">10.9.0.115408</Property>
+    <Property Name="sonaranalyzer-cs.pluginVersion">10.10.1.116480</Property>
     <Property Name="sonar.developerAggregatedInfo.disabled">false</Property>
     <Property Name="sonar.plugins.downloadOnlyRequired">true</Property>
     <Property Name="sonar.azureresourcemanager.file.suffixes">.bicep</Property>
@@ -142,8 +143,8 @@
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.java.jvmframeworkconfig.activate">true</Property>
     <Property Name="sonar.updatecenter.url">https://downloads.sonarsource.com/sonarqube/update/update-center.properties</Property>
-    <Property Name="sonar.core.id">147B411E-AZaryKQRBUXn17yRmuJZ</Property>
-    <Property Name="sonar.core.startTime">7.05.2025 21:23:05</Property>
+    <Property Name="sonar.core.startTime">6/13/2025 6:03:38 PM</Property>
+    <Property Name="sonar.core.id">147B411E-AZdp0WHFa0oAV6J_4lSq</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
@@ -152,34 +153,34 @@
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RulesetPath>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/Sonar-cs.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/Sonar-cs-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/Sonar-cs.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/Sonar-cs-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
-        <AnalyzerPlugin Key="csharp" Version="10.9.0.115408" StaticResourceName="SonarAnalyzer-csharp-10.9.0.115408.zip">
+        <AnalyzerPlugin Key="csharp" Version="10.10.1.116480" StaticResourceName="SonarAnalyzer-csharp-10.10.1.116480.zip">
           <AssemblyPaths>
-            <Path>/var/folders/w3/ny4prqm921s5gktrrd1nq5w40000gn/T/.sonarqube/resources/0/THIRD-PARTY-NOTICES.txt</Path>
-            <Path>/var/folders/w3/ny4prqm921s5gktrrd1nq5w40000gn/T/.sonarqube/resources/0/SonarAnalyzer.CSharp.dll</Path>
+            <Path>/var/folders/0k/pwdpf79j3pdc1rzdy1nmv71r0000gn/T/.sonarqube/resources/0/THIRD-PARTY-NOTICES.txt</Path>
+            <Path>/var/folders/0k/pwdpf79j3pdc1rzdy1nmv71r0000gn/T/.sonarqube/resources/0/SonarAnalyzer.CSharp.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/cs/SonarLint.xml</Path>
+        <Path>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/cs/SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
     <AnalyzerSettings>
       <Language>vbnet</Language>
-      <RulesetPath>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/Sonar-vbnet.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/Sonar-vbnet.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
-        <AnalyzerPlugin Key="vbnet" Version="10.9.0.115408" StaticResourceName="SonarAnalyzer-vbnet-10.9.0.115408.zip">
+        <AnalyzerPlugin Key="vbnet" Version="10.10.1.116480" StaticResourceName="SonarAnalyzer-vbnet-10.10.1.116480.zip">
           <AssemblyPaths>
-            <Path>/var/folders/w3/ny4prqm921s5gktrrd1nq5w40000gn/T/.sonarqube/resources/1/SonarAnalyzer.VisualBasic.dll</Path>
-            <Path>/var/folders/w3/ny4prqm921s5gktrrd1nq5w40000gn/T/.sonarqube/resources/1/THIRD-PARTY-NOTICES.txt</Path>
+            <Path>/var/folders/0k/pwdpf79j3pdc1rzdy1nmv71r0000gn/T/.sonarqube/resources/1/SonarAnalyzer.VisualBasic.dll</Path>
+            <Path>/var/folders/0k/pwdpf79j3pdc1rzdy1nmv71r0000gn/T/.sonarqube/resources/1/THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/conf/vbnet/SonarLint.xml</Path>
+        <Path>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/conf/vbnet/SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

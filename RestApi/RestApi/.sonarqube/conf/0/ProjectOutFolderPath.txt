@@ -1,1 +1,1 @@
-/Users/hakan/Documents/flo_2025_dotnet/RestApi/.sonarqube/out/0
+/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/.sonarqube/out/0

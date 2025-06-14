@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.VisualBasic;
 using RestApi.Data;
 using RestApi.Models;
 using RestApi.Models.Dto;
@@ -11,10 +14,12 @@ using System.Text;
 
 namespace RestApi.Controllers
 {
+    [EnableCors("_myAllowSpecificOrigins")]
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
+        string name = "";
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
 
@@ -32,6 +37,7 @@ namespace RestApi.Controllers
             {
                 return BadRequest(ModelState);
             }
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             _context.Users.Add(user);
             _context.SaveChanges();
             return Ok(user);
@@ -99,8 +105,8 @@ namespace RestApi.Controllers
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
-
-            return Ok(new { Token = tokenString });
+            existingUser.Password = null; // Remove password from the response
+            return Ok(new { Token = tokenString, User = existingUser });
         }
 
         private void ParseRole(string roles, SecurityTokenDescriptor tokenDescriptor)

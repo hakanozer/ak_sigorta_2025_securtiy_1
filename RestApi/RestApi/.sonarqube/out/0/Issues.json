@@ -4,45 +4,24 @@
   "runs": [
     {
       "tool": {
-        "name": "Microsoft (R) Visual C# Derleyicisi",
-        "version": "4.13.0.0",
-        "fileVersion": "4.13.0-3.25072.11 (40a6eabe)",
-        "semanticVersion": "4.13.0",
-        "language": "tr-TR"
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.14.0.0",
+        "fileVersion": "4.14.0-3.25262.10 (8edf7bcd)",
+        "semanticVersion": "4.14.0",
+        "language": "en-US"
       },
       "results": [
         {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Olası null başvuru dönüşü.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/CustomValids/CityValid.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 24,
-                  "endLine": 12,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Null atanamaz özellik 'Users', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -55,7 +34,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 28,
@@ -72,14 +51,14 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Null atanamaz özellik 'Notes', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "message": "Non-nullable property 'Notes' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -92,7 +71,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 11,
                   "startColumn": 28,
@@ -109,14 +88,14 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Null atanamaz özellik 'Products', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "message": "Non-nullable property 'Products' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -129,7 +108,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 31,
@@ -146,15 +125,15 @@
         {
           "ruleId": "CS8604",
           "level": "warning",
-          "message": "'byte[] Encoding.GetBytes(string s)' içindeki 's' parametresi için olası null başvuru bağımsız değişkeni.",
+          "message": "Possible null reference argument for parameter 's' in 'byte[] Encoding.GetBytes(string s)'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Program.cs",
                 "region": {
-                  "startLine": 44,
+                  "startLine": 51,
                   "startColumn": 35,
-                  "endLine": 44,
+                  "endLine": 51,
                   "endColumn": 84
                 }
               }
@@ -165,17 +144,59 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8603",
           "level": "warning",
-          "message": "Olası bir null başvurunun başvurma işlemi.",
+          "message": "Possible null reference return.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/CustomValids/CityValid.cs",
                 "region": {
-                  "startLine": 11,
+                  "startLine": 12,
+                  "startColumn": 24,
+                  "endLine": 12,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 37,
+                  "endLine": 108,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "region": {
+                  "startLine": 12,
                   "startColumn": 18,
-                  "endLine": 11,
+                  "endLine": 12,
                   "endColumn": 52
                 }
               }
@@ -186,45 +207,24 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS0414",
           "level": "warning",
-          "message": "Olası bir null başvurunun başvurma işlemi.",
+          "message": "The field 'AuthController.name' is assigned but its value is never used",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 21,
-                  "endLine": 17,
-                  "endColumn": 55
+                  "startLine": 22,
+                  "startColumn": 16,
+                  "endLine": 22,
+                  "endColumn": 20
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Olası bir null başvurunun başvurma işlemi.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 45,
-                  "endLine": 53,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
+            "warningLevel": 3
           }
         },
         {
@@ -234,11 +234,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
                 "region": {
-                  "startLine": 12,
+                  "startLine": 13,
                   "startColumn": 9,
-                  "endLine": 12,
+                  "endLine": 13,
                   "endColumn": 46
                 }
               }
@@ -255,11 +255,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 15,
                   "startColumn": 9,
-                  "endLine": 14,
+                  "endLine": 15,
                   "endColumn": 53
                 }
               }
@@ -276,74 +276,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Program.cs",
                 "region": {
-                  "startLine": 22,
-                  "startColumn": 1,
-                  "endLine": 22,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 1,
-                  "endLine": 35,
-                  "endColumn": 10
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 1,
-                  "endLine": 31,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.cs",
-                "region": {
-                  "startLine": 66,
+                  "startLine": 73,
                   "startColumn": 5,
-                  "endLine": 66,
+                  "endLine": 73,
                   "endColumn": 72
                 }
               }
@@ -360,12 +297,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Program.cs",
                 "region": {
-                  "startLine": 71,
+                  "startLine": 78,
                   "startColumn": 1,
-                  "endLine": 71,
+                  "endLine": 78,
                   "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'name' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 16,
+                  "endLine": 22,
+                  "endColumn": 20
                 }
               }
             }
@@ -377,11 +335,32 @@
         {
           "ruleId": "CA1050",
           "level": "note",
-          "message": "Ad alanlarında türleri bildirin",
+          "message": "Declare types in namespaces",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Startup.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Declare types in namespaces",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
                 "region": {
                   "startLine": 1,
                   "startColumn": 14,
@@ -398,16 +377,100 @@
         {
           "ruleId": "CA1050",
           "level": "note",
-          "message": "Ad alanlarında türleri bildirin",
+          "message": "Declare types in namespaces",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/GlobalMiddleware.cs",
                 "region": {
                   "startLine": 4,
                   "startColumn": 14,
                   "endLine": 4,
                   "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_secretKey' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 12,
+                  "endLine": 10,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private field 'name'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 9,
+                  "endLine": 22,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_iv' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 29,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Declare types in namespaces",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 14,
+                  "endLine": 6,
+                  "endColumn": 29
                 }
               }
             }
@@ -423,7 +486,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/GlobalMiddleware.cs",
                 "region": {
                   "startLine": 4,
                   "startColumn": 14,
@@ -444,12 +507,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
                 "region": {
                   "startLine": 1,
                   "startColumn": 14,
                   "endLine": 1,
                   "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'PasswordManager' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 14,
+                  "endLine": 6,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'Startup' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Startup.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 21
                 }
               }
             }
@@ -465,7 +570,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/CustomValids/CityValid.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/CustomValids/CityValid.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 18,
@@ -486,7 +591,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/CustomValids/CityValid.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/CustomValids/CityValid.cs",
                 "region": {
                   "startLine": 5,
                   "startColumn": 18,
@@ -507,7 +612,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 50,
@@ -520,7 +625,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 31,
                   "startColumn": 50,
@@ -531,7 +636,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 46,
                   "startColumn": 50,
@@ -542,7 +647,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 49,
                   "startColumn": 54,
@@ -562,139 +667,13 @@
           }
         },
         {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_secretKey' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 12,
-                  "endLine": 10,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4487",
-          "level": "warning",
-          "message": "Remove this unread private field '_iv' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 29,
-                  "endLine": 9,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1050",
-          "level": "note",
-          "message": "Ad alanlarında türleri bildirin",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 14,
-                  "endLine": 6,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'PasswordManager' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 14,
-                  "endLine": 6,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1050",
-          "level": "note",
-          "message": "Ad alanlarında türleri bildirin",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Startup.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'Startup' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Startup.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S6418",
           "level": "warning",
           "message": "\"_secretKey\" detected here, make sure this is not a hard-coded secret.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 25,
@@ -715,12 +694,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 13,
                   "endLine": 17,
                   "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 36,
+                  "endLine": 36,
+                  "endColumn": 44
                 }
               }
             }
@@ -736,7 +736,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Startup.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Startup.cs",
                 "region": {
                   "startLine": 32,
                   "startColumn": 17,
@@ -757,7 +757,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Product.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/User.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 20,
@@ -778,28 +778,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Product.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 24,
-                  "endLine": 14,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6964",
-          "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Note.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Note.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 20,
@@ -820,7 +799,28 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Note.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Product.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 20,
+                  "endLine": 8,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Note.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 20,
@@ -841,33 +841,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/User.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Product.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 20,
-                  "endLine": 8,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "MVC1005",
-          "level": "warning",
-          "message": "Using 'UseMvc' to configure MVC is not supported while using Endpoint Routing. To continue using 'UseMvc', please set 'MvcOptions.EnableEndpointRouting = false' inside 'ConfigureServices'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Startup.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 9,
-                  "endLine": 45,
-                  "endColumn": 21
+                  "startLine": 14,
+                  "startColumn": 24,
+                  "endLine": 14,
+                  "endColumn": 29
                 }
               }
             }
@@ -883,32 +862,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 31,
+                  "startLine": 49,
                   "startColumn": 36,
-                  "endLine": 31,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/AuthController.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 36,
-                  "endLine": 43,
+                  "endLine": 49,
                   "endColumn": 44
                 }
               }
@@ -925,12 +883,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 91,
                   "startColumn": 19,
                   "endLine": 91,
                   "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "MVC1005",
+          "level": "warning",
+          "message": "Using 'UseMvc' to configure MVC is not supported while using Endpoint Routing. To continue using 'UseMvc', please set 'MvcOptions.EnableEndpointRouting = false' inside 'ConfigureServices'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Startup.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 9,
+                  "endLine": 45,
+                  "endColumn": 21
                 }
               }
             }
@@ -946,11 +925,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Program.cs",
                 "region": {
-                  "startLine": 88,
+                  "startLine": 95,
                   "startColumn": 1,
-                  "endLine": 88,
+                  "endLine": 95,
                   "endColumn": 10
                 }
               }
@@ -967,11 +946,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 106,
+                  "startLine": 112,
                   "startColumn": 22,
-                  "endLine": 106,
+                  "endLine": 112,
                   "endColumn": 31
                 }
               }
@@ -984,15 +963,15 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "'ParseRole' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "message": "Member 'ParseRole' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 106,
+                  "startLine": 112,
                   "startColumn": 22,
-                  "endLine": 106,
+                  "endLine": 112,
                   "endColumn": 31
                 }
               }
@@ -1006,8 +985,8 @@
       "rules": {
         "CA1050": {
           "id": "CA1050",
-          "shortDescription": "Ad alanlarında türleri bildirin",
-          "fullDescription": "Ad çakışmalarını engellemek amacıyla ve ilgili türleri bir nesne hiyerarşisinde düzenleme yöntemi olarak ad alanlarında türler bildirilir.",
+          "shortDescription": "Declare types in namespaces",
+          "fullDescription": "Types are declared in namespaces to prevent name collisions and as a way to organize related types in an object hierarchy.",
           "defaultLevel": "note",
           "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1050",
           "properties": {
@@ -1022,8 +1001,8 @@
         },
         "CA1822": {
           "id": "CA1822",
-          "shortDescription": "Üyeleri statik olarak işaretleyin",
-          "fullDescription": "Örnek verilerine erişmeyen veya örnek yöntemlerini çağırmayan üyeler statik olarak işaretlenebilir. Yöntemleri statik olarak işaretledikten sonra, derleyici bu üyelere yönelik sanal olmayan çağrı konumlarını gösterir. Bu, performans açısından duyarlı kod için önemli ölçüde performans kazanımı sağlar.",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
           "defaultLevel": "note",
           "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
           "properties": {
@@ -1036,9 +1015,23 @@
             ]
           }
         },
+        "CS0414": {
+          "id": "CS0414",
+          "shortDescription": "Field is assigned but its value is never used",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0414)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
         "CS8602": {
           "id": "CS8602",
-          "shortDescription": "Olası bir null başvurunun başvurma işlemi.",
+          "shortDescription": "Dereference of a possibly null reference.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
           "properties": {
@@ -1052,7 +1045,7 @@
         },
         "CS8603": {
           "id": "CS8603",
-          "shortDescription": "Olası null başvuru dönüşü.",
+          "shortDescription": "Possible null reference return.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
           "properties": {
@@ -1066,7 +1059,7 @@
         },
         "CS8604": {
           "id": "CS8604",
-          "shortDescription": "Olası null başvuru bağımsız değişkeni.",
+          "shortDescription": "Possible null reference argument.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
           "properties": {
@@ -1080,9 +1073,23 @@
         },
         "CS8618": {
           "id": "CS8618",
-          "shortDescription": "Null atanamaz alan, oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
@@ -1110,6 +1117,23 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1125",
           "properties": {
             "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "This rule raises an issue when a private/internal type or member is never referenced in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

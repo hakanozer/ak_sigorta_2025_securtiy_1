@@ -1,5 +1,5 @@
-³
-9/Users/hakan/Documents/flo_2025_dotnet/RestApi/Startup.cs
+Í
+S/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Startup.cs
 
  
 
@@ -11,8 +11,8 @@
 
    <
   . 1$$ (( ++ ,, -- 
-  G J"" ð
-J/Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs
+  G J"" Š
+d/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Services/PasswordManager.cs
 
  (
    $$ GG 
@@ -45,19 +45,23 @@ J/Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs
 [[ #
 [[( 6]] ,
 ]] `` bb& )
-^^ `` ›
-9/Users/hakan/Documents/flo_2025_dotnet/RestApi/Program.csH
-     ,," )-- ;;
+^^ `` ÿ
+S/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Program.csP
+        33" )44 BB
  
   ' 
 O Z %= H
 
  
 4 ; 
-,, 558 ;(
-.. 00 11 22 |
-;; >> @@ AA JJ LL OO PP QQ RR SS TT VV XX {
-=/Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/User.cs
+ "" 2
+    "" 
+## 
+%% 
+33 <<8 ;(
+55 77 88 99 |
+BB EE GG HH QQ SS VV WW XX YY ZZ [[ ]] __ •
+W/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/User.cs
 
  
 
@@ -69,8 +73,8 @@ J/Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs
 
  
 
- r
-@/Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Product.cs
+ Œ
+Z/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Product.cs
 
  
 
@@ -78,8 +82,8 @@ J/Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs
 
  
 
- {
-=/Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/Note.cs
+ •
+W/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/Note.cs
 
  
 
@@ -89,8 +93,8 @@ J/Users/hakan/Documents/flo_2025_dotnet/RestApi/Services/PasswordManager.cs
 
  
 
- {
-I/Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/dto/UserLoginDto.cs
+ •
+c/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Models/dto/UserLoginDto.cs
 
  
 
@@ -98,8 +102,8 @@ I/Users/hakan/Documents/flo_2025_dotnet/RestApi/Models/dto/UserLoginDto.cs
 
  
 
- ‰
-Y/Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_InitialCreate.cs
+ £
+s/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs
 
  &
 
@@ -117,37 +121,37 @@ Y/Users/hakan/Documents/flo_2025_dotnet/RestApi/Migrations/20250311115221_Initia
 88  !88% &
 
 EE  $(
-EE6 FGG JJ MM ‡
-M/Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/GlobalMiddleware.cs
+EE6 FGG JJ MM Í
+g/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/GlobalMiddleware.cs
 
  
 % *
 
- AA 
+  
 , 0
 
  
 
- Z
-) 0  (( ((3 :** ++1 8.. AA 
- % )
- 9 =
- 1 3
-++ --! '
--- 00/ 344` d
-44 &55, 6£
-S/Users/hakan/Documents/flo_2025_dotnet/RestApi/Middleware/ErrorHandlerMiddleware.cs
+ 
+) 0 ‘
+m/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs
 
  #
-% *  
+% *  
 2 6 
 
- 2
-) 0    "
- * ,
-  &
-   
-K/Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs
+ P
+) 0
+
+   + 2- 4  "
+
+
+ & .
+ * ,
+  &(
+  %% ++ 
+&& ++& ,·
+e/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Data/ApplicationDbContext.cs
  %5 I
 K R[ b
 
@@ -157,8 +161,8 @@ K/Users/hakan/Documents/flo_2025_dotnet/RestApi/Data/ApplicationDbContext.cs
 
   
 
- &š
-H/Users/hakan/Documents/flo_2025_dotnet/RestApi/CustomValids/CityValid.cs
+ &´
+b/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/CustomValids/CityValid.cs
 
  
 
@@ -170,8 +174,8 @@ H/Users/hakan/Documents/flo_2025_dotnet/RestApi/CustomValids/CityValid.cs
 U f
 		  
 
- ß
-O/Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/ProductController.cs
+ ù
+i/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/ProductController.cs
 
  "d
 . 6     " *'' .. "33 44 ;; #
@@ -190,55 +194,57 @@ O/Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/ProductController.cs
 .. // 33% ,
 
 99 #
-;; << È
-L/Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/NoteController.cs
+;; << â
+f/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/NoteController.cs
 
- d
-. 6      '&& -- 22 33 ::  
-3 : 
+ d
+. 6   !! ''' .. 33 44 ==  
+3 : 
 
- #
-) - # 
+ #
+) - # 
 
- #
-( *  3 5
-1 5%%# '(
-   !! %% '' "
+ #
+( *!!3 5
+1 5&&# '(
+!! "" && (( "
 
-++ #
-++( *--+ -
--- .. 22" &
+,, #
+,,( *..+ -
+.. // 33" &
 
-88 #
-:: ;; ¬
-L/Users/hakan/Documents/flo_2025_dotnet/RestApi/Controllers/AuthController.cs
+99 #
+== >> ú
+f/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_1/RestApi/RestApi/Controllers/AuthController.cs
 
- 2
-. 6 ## $$ ?? '
-( 6 SS '
-3 : 
-K X *
+ 
 
- %
-+ /## #%% 
+ 2
+. 6 )) ** EE '
+( 6 YY '
+3 : 
+K X *
 
-)) "
-))0 711 "22 "2
-// 55B F995 9??P TCC- 1
-55  664 A
-88 +99 ,<<# 2
-99 ::7 ><<; B
-<<  ==7 D2
-?? @@ CC< HZZ/ ;aa &
-??= >??B C
-RR dd $ee *
-SS TT. 4
-TT ]]U X(
-VV __ aa- <dd1 @
-dd ee6 ;
-ee gg$ /
-jj aa 
-jj& +ll  
-jjE Too 
-ll mm! )
-ll3 4ll8 9
+"" %2
+""+ /(( ((; ?)) #++ 
+
+// "
+//0 777 "88 "2
+55 ;;B F??5 9EEP TII- 1
+;;  <<4 A
+>> +?? ,BB# 2
+?? @@7 >BB; B
+BB  CC7 DF
+EE FF II< H``/ ;gg &ll mm8 D
+EE= >EEB C
+XX jj $kk *
+YY ZZ. 4
+ZZ ccU X(
+\\ ee gg- <jj1 @
+jj kk6 ;
+kk mm$ /
+pp gg 
+pp& +rr  
+ppE Tuu 
+rr ss! )
+rr3 4rr8 9
